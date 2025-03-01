@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Reservations</title>
+    <script defer src="reservations.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?nature,abstract') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        
+        table {
+            width: 90%;
+            max-width: 1200px;
+            border-collapse: collapse;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        
+        thead {
+            background-color: #007bff;
+            color: white;
+        }
+        
+        tbody tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+        
+        tbody tr:hover {
+            background-color: #cce5ff;
+            transition: 0.3s;
+        }
+
+        th {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Submitted Reservations</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Company</th>
+                    <th>Venue</th>
+                    <th>Event</th>
+                    <th>Primary Date</th>
+                    <th>Secondary Date</th>
+                    <th>About</th>
+                </tr>
+            </thead>
+            <tbody id="reservationsTable"></tbody>
+        </table>
+    </div>
+</body>
+</html>
