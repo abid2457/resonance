@@ -102,21 +102,7 @@ if (isset($_SESSION['user_id'])) {
 </head>
 <body>
     <div class="overlay"></div>
-    <div class="container" id="loginForm">
-        <h2>Login</h2>
-        
-        <input type="email" id="loginEmail" placeholder="Email address">
-        <input type="password" id="loginPassword" placeholder="Password">
-        
-        <button class="btn" id="loginBtn">Log in</button>
-        
-        <div class="links">
-            <p><a href="#">Forgot your password?</a></p>
-            <p>Don't have an account? <a href="#" onclick="toggleForms()">Register</a></p>
-        </div>
-    </div>
-    
-    <div class="container" id="registerForm" style="display:none;">
+    <div class="container" id="registerForm">
         <h2>Enjoy Exclusive Perks</h2>
         <p>✔ Be one of the first to get presale tickets</p>
         <p>✔ Set up alerts for your favourite artists</p>
@@ -131,7 +117,7 @@ if (isset($_SESSION['user_id'])) {
         <button class="btn" id="registerBtn">Register</button>
         
         <div class="links">
-            <p>Already Registered? <a href="#" onclick="toggleForms()">Log in</a></p>
+            <p>Already Registered? <a href="login.php">Log in</a></p>
         </div>
     </div>
 
