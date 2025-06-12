@@ -265,7 +265,7 @@ Resonance
                             </div>
                         </div>
                         <div class="down-content">
-                            <span>Sept 10 to 14, 2021</span>
+                            <span>Feb 10 to 14, 2025</span>
                             <a href="event-details.php"><h4>Wonder Land Music and Arts Festival</h4></a>
                         </div>
                     </div>
@@ -282,7 +282,7 @@ Resonance
                             </div>
                         </div>
                         <div class="down-content">
-                            <span>Oct 11 to 16, 2021</span>
+                            <span>Mar 11 to 16, 2025</span>
                             <a href="event-details.php"><h4>Big Water Splashing Festival</h4></a>
                         </div>
                     </div>
@@ -299,7 +299,7 @@ Resonance
                             </div>
                         </div>
                         <div class="down-content">
-                            <span>Nov 10 to 18, 2021</span>
+                            <span>April 10 to 18, 2025</span>
                             <a href="event-details.php"><h4>Tiger Dance Hip Hop Festival</h4></a>
                         </div>
                     </div>
@@ -350,7 +350,6 @@ Resonance
             display: flex;
             justify-content: center;
             align-items: center;
-
             padding: 0;
             margin: 0;
         }

@@ -16,12 +16,13 @@
                 </div>
             </div>
             <div class="col-lg-4">
+                
                 <div class="social-links">
                     <h4>Follow Us</h4>
                     <ul>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.x.com/"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>

@@ -209,196 +209,197 @@ if (!$query) {
         </div>
     </div>
 
- <!-- *** Modern Navbar *** -->
- <header>
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="index.php" class="active">Home</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="shows-events.html">Events</a></li>
-            <li><a href="tickets.php">Tickets</a></li>
-            <li><a href="contact.php">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+<!-- *** Modern Navbar *** -->
+<header>
+        <nav class="navbar">
+            <ul class="nav-links">
+               <li><a href="index.php" class="active">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="shows-events.html">Events</a></li>
+                <li><a href="tickets.php">Tickets</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- *** CSS Styling *** -->
-<style>
-    /* Navbar Styling */
-    .navbar {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background: #111;
-        padding: 15px 0;
-        box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
-        z-index: 1000;
-
-        /* Centering navbar content */
-        display: flex;
-
-
-
-        height: 60px;
-        /* Ensuring a good height */
-    }
-
-    /* Centering navbar items */
-    .nav-links {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        padding: 0;
-        margin: 0;
-    }
-
-    /* Spacing between menu items */
-    .nav-links li {
-        margin: 0 20px;
-    }
-
-    /* Styling menu links */
-    .nav-links a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 18px;
-        transition: 0.3s;
-    }
-
-    /* Hover effect */
-    .nav-links a:hover {
-        color: #ff4a57;
-    }
-
-    /* Responsive for Mobile */
-    @media (max-width: 768px) {
+    <!-- *** CSS Styling *** -->
+    <style>
+        /* Navbar Styling */
         .navbar {
-            height: auto;
-            padding: 10px 0;
-        }
-
-        .nav-links {
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .nav-links li {
-            margin: 10px 0;
-        }
-    }
-</style>
-
-
-<!-- *** Stylish Footer *** -->
-<?php include 'footer.php'; ?>
-<!-- *** CSS Styling (Add to your CSS file) *** -->
-<style>
-    /* Navbar Styling */
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #111;
-        padding: 15px 30px;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-    }
-
-    .logo a {
-        font-size: 24px;
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    .nav-links {
-        list-style: none;
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 0 15px;
-    }
-
-    .nav-links a {
-        color: #fff;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-
-    .nav-links a:hover {
-        color: #ff4a57;
-    }
-
-    .menu-toggle {
-        display: none;
-        font-size: 24px;
-        color: #fff;
-    }
-
-    /* Footer Styling */
-    footer {
-        background: #fff;
-        color: #222;
-        padding: 30px 0;
-        text-align: center;
-    }
-
-    .footer .logo {
-        font-size: 26px;
-        font-weight: bold;
-    }
-
-    .links ul,
-    .social-links ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    .links ul li,
-    .social-links ul li {
-        display: inline;
-        margin: 0 10px;
-    }
-
-    .links ul a,
-    .social-links ul a {
-        color: #ff4a57;
-        text-decoration: none;
-    }
-
-    .under-footer {
-        margin-top: 20px;
-        font-size: 14px;
-    }
-
-    /* Responsive Navbar */
-    @media (max-width: 768px) {
-        .nav-links {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            right: 0;
-            background: #111;
+            position: fixed;
+            bottom: 0;
+            left: 0;
             width: 100%;
-            text-align: center;
+            background: #111;
+            padding: 15px 0;
+            box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+
+            /* Centering navbar content */
+            display: flex;
+
+
+
+            height: 60px;
+            /* Ensuring a good height */
+        }
+
+        /* Centering navbar items */
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Spacing between menu items */
+        .nav-links li {
+            margin: 0 20px;
+        }
+
+        /* Styling menu links */
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        /* Hover effect */
+        .nav-links a:hover {
+            color: #ff4a57;
+        }
+
+        /* Responsive for Mobile */
+        @media (max-width: 768px) {
+            .navbar {
+                height: auto;
+                padding: 10px 0;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+
+
+    <!-- *** Stylish Footer *** -->
+    <?php include 'footer.php'; ?>
+    <!-- *** CSS Styling (Add to your CSS file) *** -->
+    <style>
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111;
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo a {
+            font-size: 24px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin-left:30%;
         }
 
         .nav-links li {
-            margin: 15px 0;
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff4a57;
         }
 
         .menu-toggle {
-            display: block;
-            cursor: pointer;
+            display: none;
+            font-size: 24px;
+            color: #fff;
         }
-    }
-</style>                
+
+        /* Footer Styling */
+        footer {
+            background: #fff;
+            color: #222;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .footer .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .links ul,
+        .social-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .links ul li,
+        .social-links ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .links ul a,
+        .social-links ul a {
+            color: #ff4a57;
+            text-decoration: none;
+        }
+
+        .under-footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        /* Responsive Navbar */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background: #111;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links li {
+                margin: 15px 0;
+            }
+
+            .menu-toggle {
+                display: block;
+                cursor: pointer;
+            }
+        }
+    </style>
 
     <!-- Plugins -->
     <script src="assets/js/scrollreveal.min.js"></script>

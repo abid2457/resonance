@@ -154,7 +154,7 @@ $qr_code_url = "https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=" . ur
                             <div class="play-icon" id="playButton">▶</div>
                         </div>
                         
-                        <video id="videoPlayer" controls src="/resonance/<?php echo htmlspecialchars($event['video_url']); ?>" 
+                        <video id="videoPlayer" controls src="/resonance<?php echo htmlspecialchars($event['video_url']); ?>" 
                             style="display: none;" width="400"></video>
                         
                         <div class="right-content">

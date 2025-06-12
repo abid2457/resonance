@@ -48,9 +48,10 @@ if (!$carousel_query) {
 
     <link rel="stylesheet" href="assets/css/tooplate-artxibition.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 </head>
 <style>
     body .banner {
@@ -136,7 +137,7 @@ if (!$carousel_query) {
     }
 
     .event-details {
-        padding: 32px;
+        padding: 12px;
         color: white;
     }
 
@@ -287,12 +288,25 @@ if (!$carousel_query) {
     .owl-nav {
         display: none;
     }
-    
+
+    .overlay {
+        text-align: center;
+        margin-top: 35rem;
+        color: white;
+    }
+
+    .title {
+        color: white;
+    }
+
+    .description {
+        color: white;
+    }
 </style>
 
 <body>
     <?php include 'menu_include.php'; ?>
-    
+
 
     <!-- Fullwidth Carousel Section -->
     <div class="fullwidth-carousel">
@@ -300,7 +314,8 @@ if (!$carousel_query) {
             <?php while ($event = $carousel_query->fetch_assoc()): ?>
                 <div class="item">
                     <a href="ticket-details.php?id=<?php echo $event['id']; ?>">
-                        <img src="/resonance/<?php echo htmlspecialchars($event['thumbnail_url']); ?>" alt="<?php echo htmlspecialchars($event['title']); ?>">
+                        <img src="/resonance/<?php echo htmlspecialchars($event['thumbnail_url']); ?>"
+                            alt="<?php echo htmlspecialchars($event['title']); ?>">
                     </a>
                     <div class="overlay">
                         <p class="title"><?php echo htmlspecialchars($event['title']); ?></p>
@@ -332,8 +347,9 @@ if (!$carousel_query) {
                 if ($interval->days <= 30): ?>
                     <span class="new-badge">New</span>
                 <?php endif; ?>
-                
-                <img src="/resonance/<?php echo htmlspecialchars($event['thumbnail_url']); ?>" alt="<?php echo htmlspecialchars($event['title']); ?>">
+
+                <img src="/resonance/<?php echo htmlspecialchars($event['thumbnail_url']); ?>"
+                    alt="<?php echo htmlspecialchars($event['title']); ?>">
                 <div class="event-details">
                     <h3><?php echo htmlspecialchars($event['title']); ?></h3>
                     <p><?php echo date("d M Y", strtotime($event['date_time'])); ?></p>
@@ -342,16 +358,6 @@ if (!$carousel_query) {
             </div>
         <?php endwhile; ?>
     </div>
-
-    <div class="banner">
-        <div class="overlay"></div>
-        <div class="content">
-            <h1>SIGN UP TO RESONANCE PRE-SALE</h1>
-            <p style="color: white;">Enjoy exclusive perks</p>
-            <a href="/login.html" class="btn">SIGN UP NOW! <span class="btn-icon">🔗</span></a>
-        </div>
-    </div>
-
 
     <!-- Venue & Tickets Section -->
     <div class="venue-tickets">
@@ -367,7 +373,8 @@ if (!$carousel_query) {
                     <div class="col-lg-4">
                         <div class="venue-item">
                             <div class="thumb">
-                                <img src="/resonance/<?php echo htmlspecialchars($event['thumbnail_url']); ?>" alt="<?php echo htmlspecialchars($event['title']); ?>">
+                                <img src="/resonance/<?php echo htmlspecialchars($event['thumbnail_url']); ?>"
+                                    alt="<?php echo htmlspecialchars($event['title']); ?>">
                             </div>
                             <div class="down-content">
                                 <div class="left-content">
@@ -383,7 +390,8 @@ if (!$carousel_query) {
                                         <li><i class="fa fa-user"></i><?php echo $event['available_tickets']; ?></li>
                                     </ul>
                                     <div class="price">
-                                        <span>1 ticket<br>from <em>₹<?php echo number_format($event['ticket_price'], 2); ?></em></span>
+                                        <span>1 ticket<br>from
+                                            <em>₹<?php echo number_format($event['ticket_price'], 2); ?></em></span>
                                     </div>
                                 </div>
                             </div>
@@ -502,7 +510,7 @@ if (!$carousel_query) {
                 <li><a href="contact.php">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </header> #10094
 
     <!-- *** CSS Styling *** -->
     <style>
@@ -532,7 +540,6 @@ if (!$carousel_query) {
             display: flex;
             justify-content: center;
             align-items: center;
-
             padding: 0;
             margin: 0;
         }
@@ -599,7 +606,7 @@ if (!$carousel_query) {
         .nav-links {
             list-style: none;
             display: flex;
-            margin: left 30px;
+            margin-left: 30%;
         }
 
         .nav-links li {
@@ -684,7 +691,7 @@ if (!$carousel_query) {
 
     <?php include 'footer.php'; ?>
 
-    
+
     <!-- Plugins -->
     <script src="assets/js/scrollreveal.min.js"></script>
     <script src="assets/js/waypoints.min.js"></script>

@@ -42,9 +42,9 @@ $conn->close();
 
     <link rel="stylesheet" href="assets/css/tooplate-artxibition.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 </head>
 <style>
     body .banner {
@@ -324,11 +324,12 @@ $conn->close();
     </table>
 </div>
 
+
 <!-- *** Modern Navbar *** -->
 <header>
         <nav class="navbar">
             <ul class="nav-links">
-                <li><a href="index.php" class="active">Home</a></li>
+               <li><a href="index.php" class="active">Home</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="shows-events.html">Events</a></li>
                 <li><a href="tickets.php">Tickets</a></li>
@@ -337,9 +338,8 @@ $conn->close();
         </nav>
     </header>
 
-
- <!-- *** CSS Styling *** -->
- <style>
+    <!-- *** CSS Styling *** -->
+    <style>
         /* Navbar Styling */
         .navbar {
             position: fixed;
@@ -407,6 +407,9 @@ $conn->close();
         }
     </style>
 
+
+    <!-- *** Stylish Footer *** -->
+    <?php include 'footer.php'; ?>
     <!-- *** CSS Styling (Add to your CSS file) *** -->
     <style>
         /* Navbar Styling */
@@ -431,7 +434,7 @@ $conn->close();
         .nav-links {
             list-style: none;
             display: flex;
-            margin: left 30px;
+            margin-left:30%;
         }
 
         .nav-links li {
@@ -512,7 +515,7 @@ $conn->close();
                 cursor: pointer;
             }
         }
-    </style>
+    
 
 <?php include 'footer.php'; ?>
 
