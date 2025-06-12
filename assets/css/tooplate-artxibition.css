@@ -1992,14 +1992,14 @@ Ticket Details Page
 }
 
 .ticket-details-page .right-content span {
-  font-size: 14px;
+  font-size: 20x;
   font-weight: 700;
   color: #656c74;
   display: inline-block;
   border-bottom: 1px solid #eee;
   width: 100%;
   padding-bottom: 30px;
-  margin-top: 15px;
+  padding-left: 15px;
   margin-bottom: 30px;
 }
 
@@ -2051,8 +2051,15 @@ Ticket Details Page
   float: left;
   font-size: 20px;
   margin-top: 8px;
+  display: flex;
 }
 
+.mt-30{
+  margin-top: 30px;
+}
+.mt-10{
+  margin-top: 10px;
+}
 .ticket-details-page .right-content .total .main-dark-button {
   text-align: right;
 }
